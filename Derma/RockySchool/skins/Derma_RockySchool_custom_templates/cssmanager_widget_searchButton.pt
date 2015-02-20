@@ -1,0 +1,39 @@
+<div metal:define-macro="widget" >
+ <input type="text" size="30" 
+        tal:attributes="id id; 
+                        name id; 
+                        value value;"  />
+     <td>
+        <select size="1" tal:attributes="id string:${id}_selector; 
+                                         onChange string:set_search_colour('${id}')">
+          <option value="">Choose a seach button colour...</option>
+          <option value="blue">Blue</option>
+          <!--option value="brown">Brown</option>
+          <option value="dark_green">Dark Green</option>
+          <option value="dark_grey">Dark Grey</option-->
+          <option value="dark_red">Dark Red</option>
+          <!--option value="dark_yellow">Dark Yellow</option-->
+          <option value="green">Green</option>
+          <!--option value="grey">Grey</option>
+          <option value="navy_blue">Navy Blue</option>
+          <option value="orange">Orange</option>
+          <option value="purple">Purple</option>
+          <option value="yellow">Yellow</option>
+          <option value="sbh_lt_green">SBCHS Lt Green</option>
+          <option value="sbh_dk_green">SBCHS Dk Green</option-->
+
+	    </select>
+     </td>
+</div>
+
+<div metal:define-macro="global-stuff" >
+    <script type="text/javascript">
+        function set_search_colour(id)
+        {
+            var selector = document.getElementById(id + '_selector');
+            //var type = id.replace('image','').toLowerCase();
+            document.getElementById(id).value = 'go_'+selector.value + '.gif';
+            selector.value = '';  // Set it back to default
+        }
+    </script>
+</div>

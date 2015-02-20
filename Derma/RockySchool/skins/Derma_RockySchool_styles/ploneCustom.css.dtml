@@ -1,0 +1,160 @@
+/*
+ *  This is the file where you put your CSS changes. 
+ *  You should preferrably use this and override the 
+ *  relevant properties you want to change here instead 
+ *  of customizing plone.css to survive upgrades. Writing
+ *  your own plone.css only makes sense for very heavy 
+ *  customizations. Useful variables from Plone are 
+ *  documented at the bottom of this file.
+ */
+ 
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/* P4A CALENDAR OVER-RIDES */
+.ploneCalendar .event {
+    background-color: &dtml-memberMenuBackgroundColor;;
+}
+.ploneCalendar .event a {
+    color: &dtml-memberLinkColor;;
+}
+.ploneCalendar .event a:hover {
+    color: &dtml-memberLinkColorHover;;
+}
+.ploneCalendar .todayevent a {
+    color: &dtml-globalFontColor;;
+}
+
+/* SCHEMATA LINKS */
+li.formTab a.selected,
+li.formTab a:hover {
+    color: &dtml-globalFontColor;;
+}
+
+/* Fix for button colour */
+input.standalone {
+    color: &dtml-secondLinkColor; !important;
+}
+
+
+/* CLEAN UP CSSMANGER EDIT FORM DISPLAY... */
+.cssProp {
+    background-color: #F7F7F7;
+    border: 1px solid #EEE;
+    margin-top:1.5em;
+    padding:0.25em;
+}
+
+/* CUSTOMIZABLE SEARCH COLOURS */
+#searchGadget,
+input.searchButton {
+    background-color: &dtml-searchBackgroundColor;;
+    color: &dtml-contentViewFontColor;;
+}
+#searchGadget {
+    background-image: none;
+}
+
+/* CUSTOM WORKFFLOW COLOURS */
+.state-all_users,
+.state-all_users:visited,
+.navTreeItem .state-all_users:visited,
+.state-public,
+.state-public:visited,
+.navTreeItem .state-public {
+    color:&dtml-linkColor;;
+}
+.state-members,
+.state-members:visited {
+    color:&dtml-contentViewFontColor;;
+}
+/*.navTreeItem .state-members:visited {
+    color:#FFF !important;
+}*/
+.navTreeItem .state-members {
+    /*color:#FFF !important;*/
+    color: &dtml-memberLinkColor;;
+    background-color:&dtml-memberMenuBackgroundColor;;
+}
+dd.portletItem .navTreeItem a.state-members:hover {
+    color:&dtml-memberLinkColorHover;;
+    /*background-color:#8CC63F;
+    background:#8CC63F url(/Plone/bg-member-sub-menu-hover.gif) repeat-y 0px 0px;*/
+}
+
+.state-internal,
+.navTreeItem .state-internal,
+dd.portletItem .navTreeItem a.state-internal,
+.navTreeItem .state-internal:visited {
+    color: #F28500;
+}
+.state-internal:hover,
+.navTreeItem .state-internal:hover {
+    color: #FF7F00;
+}
+
+.state-draft_public,
+.state-draft_members,
+.navTreeItem .state-draft_public:visited,
+.navTreeItem .state-draft_members:visited {
+    color:#74AE0B;
+}
+.state-pending_members, .state-pending_public,
+.state-pending_public:visited, .state-pending_members:visited {
+    color:#FFA500;
+}
+
+.contenttype-file {
+    padding-left: 0 !important;
+}
+
+/* </dtml-with> */
+
+/* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
+
+ /* You can insert colors and other variables from Plone's 
+    base_properties by doing:
+    
+    & dtml-variableName ; (without the spaces, excluded here to not make it render)
+    
+    Example:
+    
+    myLink {
+        color: & dtml-fontColor ;   (again, without the spaces)
+    }
+ 
+   This means you can generate your own elements that use Plone's defaults,
+   and respect any customizations people have done. See base_properties for
+   the default values.
+ 
+   These are the available properties:
+   
+   logoName - the file name of the portal logo
+   fontFamily - the font family used for all text that is not headers
+   fontBaseSize - the base font size that everything is calculated from
+   fontColor - the main font color
+   fontSmallSize - used for various elements like buttons and discreet text
+   discreetColor - the font color of discreet text
+   backgroundColor - the background color 
+   linkColor - the color used on normal links
+   linkActiveColor - color used on active links
+   linkVisitedColor - color used on visited links
+   borderWidth - the width of most borders in Plone
+   borderStyle - the style of the border lines, normally solid
+   borderStyleAnnotations - style of border lines on comments etc
+   globalBorderColor - the border color used on the main tabs, the portlets etc
+   globalBackgroundColor - background color for the selected tabs, portlet headings etc
+   globalFontColor - the color of the font in the tabs and in portlet headings
+   headingFontFamily - font family for h1/h2/h3/h4/h5/h6 headlines
+   contentViewBorderColor - the content view tabs border color
+   contentViewBackgroundColor - the content view tabs background color
+   contentViewFontColor - the font color used in the content view tabs
+   inputFontColor - the font color used for input elements
+   textTransform - whether to lowercase text in portlets, tabs etc.
+   evenRowBackgroundColor - the background color of even rows in listings
+   oddRowBackgroundColor - the background color of even rows in listings
+   notifyBorderColor - border color of notification elements like the status message, the calendar focus
+   notifyBackgroundColor - background color of notification elements like the status message, the calendar focus
+   helpBackgroundColor - background color of information pop-ups (currently not used)
+
+ */

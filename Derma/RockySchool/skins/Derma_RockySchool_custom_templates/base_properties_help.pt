@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<properties>
+
+<property id="plone_skin" name="Theme name" widget="cssmanager_widget_nochange">
+	  The theme you are customizing
+</property>
+
+<property id="logoName" name="Site logo" widget="cssmanager_widget_fileUploadRename">
+	  Upload a file from your computer to use as the logo for the site
+</property>
+
+<property id="fontFamily" name="Main font family" widget="cssmanager_widget_fontFamily">
+	  The preferred font, and the fall-backs if the preferred font is not available in the user's browser
+</property>
+
+<property id="fontColor" name="Default text colour" widget="cssmanager_widget_color">
+	  The color for text in the content well of the page. Colors can be specified as words or hex values
+</property>
+
+<property id="backgroundColor" name="Page background colour" widget="cssmanager_widget_color">
+	  Note: it is often hard to read text on a strong color
+</property>
+
+<property id="linkColor" name="Unvisited link colour" widget="cssmanager_widget_color">
+	  Make sure this looks different from visited links, even to colorblind people	
+</property>
+
+<property id="linkActiveColor" name="Active link colour" widget="cssmanager_widget_color">
+	  When you click on a link in text, it will change color to whatever you specify here
+</property>
+
+<property id="linkVisitedColor" name="Visited link colour" widget="cssmanager_widget_color">
+	  Make sure this looks different from unvisited links, even to colorblind people
+</property>
+
+<property id="globalBorderColor" name="Default border colour" widget="cssmanager_widget_color">
+	Default border color throughout the site
+</property>
+
+<property id="globalBackgroundColor" name="Global background colour" widget="cssmanager_widget_color">
+	  The background color for the footer, portlet headers and global navigation bar
+</property>
+
+<property id="globalFontColor" name="Global text colour" widget="cssmanager_widget_color">
+	  The color of the text in the footer, portlet headers and global navigation tabs
+</property>
+
+<property id="headingFontFamily" name="Heading font" widget="cssmanager_widget_fontFamily">
+	  The preferred font, and the fall-backs if the preferred font is not available in the user's browser
+</property>
+
+<property id="contentViewBorderColor" name="Logged-in tabs border color" widget="cssmanager_widget_color">
+	  Applies to the tabs (view, edit, etc) that you may see when logged in
+</property>
+
+<property id="contentViewBackgroundColor" name="Logged-in tabs background color" widget="cssmanager_widget_color">
+	  Applies to the tabs (view, edit, etc) that you may see when logged in
+</property>
+
+<property id="contentViewFontColor" name="Logged-in tabs text color" widget="cssmanager_widget_color">
+	  Applies to the tabs (view, edit, etc) that you may see when logged in
+</property>
+
+<property id="inputFontColor" name="Color of input text on forms" widget="cssmanager_widget_color">
+	  When someone types something into a form, the color of the text they enter
+</property>
+
+<property id="textTransform" name="Text transformation" widget="cssmanager_widget_textTransform">
+	  Regardless of how text is entered, it can be transformed to all lower case, all capitals, etc. Applies to text in global navigation tabs among other things.
+</property> 
+
+<property id="evenRowBackgroundColor" name="Even row background colour" widget="cssmanager_widget_color">
+	  The colour to use for even rows in tables and listings.
+</property>
+
+<property id="oddRowBackgroundColor" name="Odd row background colour" widget="cssmanager_widget_color">
+	  The colour to use for odd rows in tables and listings.
+</property>
+
+<property id="notifyBorderColor" name="Notification border colour" widget="cssmanager_widget_color">
+	  Applies to notification elements like the status message, the calendar focus	
+</property>
+
+<property id="notifyBackgroundColor" name="Notification background colour" widget="cssmanager_widget_color">
+	  Applies to notification elements like the status message, the calendar focus
+</property>
+
+<property id="discreetColor" name="Discreet text colour" widget="cssmanager_widget_color">
+	  Applies to explanatory information in forms and other items given class &#34;discreet&#34;
+</property>
+
+<property id="helpBackgroundColor" name="Information pop-up background colour" widget="cssmanager_widget_color">
+	  Warning: this is not currently used by Plone, although it is available for you to use if you wish
+</property>
+
+<property id="siteActionsFontColor" name="Site Actions font colour" widget="cssmanager_widget_color">
+      Text colour for all action links above the main logo banner
+</property>
+
+<property id="searchBackgroundColor" name="Search background colour" widget="cssmanager_widget_color">
+      Background colour for the search box above the main logo banner
+</property>
+
+<property id="imageHeader" name="Header background colour" widget="cssmanager_widget_imageColour">
+    What colour should the main page header background be?
+</property>
+
+<property id="imageFooter" name="Footer background colour" widget="cssmanager_widget_imageColour">
+    What colour should the main page footer background be?
+</property>
+
+<property id="secondBackgroundColor" name="Secondary background colour" widget="cssmanager_widget_color">
+    Pick a secondary background colour for things like the main navigation bar, etc.
+</property>
+
+<property id="secondLinkColor" name="Global link colour" widget="cssmanager_widget_color">
+    Pick a secondary colour for all links in the main navigation bar
+</property>
+
+<property id="secondLinkColorHover" name="Global link colour - hover" widget="cssmanager_widget_color">
+    Pick a hover colour for all links in the main navigation bar
+</property>
+
+<property id="memberMenuBackgroundColor" name="Member navigation background colour" widget="cssmanager_widget_color">
+      Pick a background colour for the secondary member navigation bar
+</property>
+
+<property id="memberLinkColor" name="Member navigation link colour" widget="cssmanager_widget_color">
+      Pick a link colour for secondary member navigation bar
+</property>
+
+<property id="memberLinkColorHover" name="Member navigation link colour - hover" widget="cssmanager_widget_color">
+      Pick a colour for member navigation bar links when hovered (with the mouse)
+</property>
+
+</properties>

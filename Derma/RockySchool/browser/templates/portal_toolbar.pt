@@ -1,0 +1,4 @@
+<div id="portal-toolbar">
+    <tal:global-tabs replace="structure view/plone.personal_bar/render" />
+    <tal:global-tabs replace="structure view/plone.path_bar/render" />
+</div>

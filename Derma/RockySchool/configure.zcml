@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="Derma.RockySchool">
+
+   <include package=".browser" />
+
+   <include file="skins.zcml" />
+   <include file="profiles.zcml" />
+
+   <utility
+       name="Manager"
+       factory=".localroles.ManagerRole"
+       />
+
+ <adapter
+   for="Products.CMFPlone.Portal.PloneSite"
+   provides=".browser.interfaces.IIconbarConfiguration"
+   factory=".config.form_adapter" />
+
+</configure>
