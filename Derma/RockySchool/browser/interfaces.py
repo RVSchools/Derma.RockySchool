@@ -98,4 +98,7 @@ class IIconbarConfiguration(Interface):
     network = schema.TextLine(title=u"netWORK",
                               required=False,
                                           default=u"")
+    outlook_exchange = schema.TextLine(title=u"Outlook Exchange",
+                              required=False,
+                                          default=u"")
 

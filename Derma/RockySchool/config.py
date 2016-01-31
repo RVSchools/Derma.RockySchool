@@ -35,6 +35,7 @@ class IconbarConfiguration(SimpleItem):
     tech_support = FieldProperty(IIconbarConfiguration['tech_support'])
     donations = FieldProperty(IIconbarConfiguration['donations'])
     network = FieldProperty(IIconbarConfiguration['network'])
+    outlook_exchange = FieldProperty(IIconbarConfiguration['outlook_exchange'])
 
 def form_adapter(context):
     return getUtility(IIconbarConfiguration, name='iconbar_config', context=context)
