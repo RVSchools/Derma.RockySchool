@@ -44,7 +44,7 @@ class IIconbarConfiguration(Interface):
     rvs_resource_collection = schema.TextLine(title=u"RVS Resource Collection",
                               required=False,
                                               default=u"")
-    groupwise = schema.TextLine(title=u"Groupwise",
+    papercut = schema.TextLine(title=u"PaperCut",
                               required=False,
                                               default=u"")
     rvs_gmail = schema.TextLine(title=u"RVS Gmail",
