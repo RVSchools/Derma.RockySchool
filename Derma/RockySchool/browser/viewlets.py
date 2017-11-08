@@ -27,11 +27,10 @@ class MemberMenu(ViewletBase):
         root = self.context.portal_url.getPortalObject()
         path = '/%s' % root.getId()
 
+        root_ppath = root.getPhysicalPath()
         cat = self.context.portal_catalog
-        return cat.searchResults(review_state='members',
-                                 path={'query':path, 'depth':1},
-                                 sort_on='getObjPositionInParent'
-                                 )
+        results = cat.searchResults(path={'query':root_ppath, 'depth':1})
+        return [x for x in results if x.review_state=='members']
 
 class IconBar(ViewletBase):
     render = ViewPageTemplateFile('templates/iconbar.pt')

@@ -30,6 +30,12 @@
                      tal:attributes="src string:${portal_url}/CORE-badge.png">
             </a>
         </li>
+	<li class="iconblock" tal:condition="icons/my_blueprint">
+            <a tal:attributes="href icons/my_blueprint;" title="My Blueprint">
+                <img class="iconimage" alt="My Blueprint"
+                     tal:attributes="src string:${portal_url}/my_blueprint.png">
+            </a>
+        </li>
 	<li class="iconblock" tal:condition="icons/power_school">
             <a tal:attributes="href icons/power_school;" title="Power School">
                 <img class="iconimage" alt="Power School"
@@ -58,6 +64,12 @@
             <a tal:attributes="href icons/papercut;" title="PaperCut">
                 <img class="iconimage" alt="PaperCut"
                      tal:attributes="src string:${portal_url}/papercut-badge.png">
+            </a>
+        </li>
+	<li class="iconblock" tal:condition="icons/atrieve">
+            <a tal:attributes="href icons/atrieve;" title="Atrieve">
+                <img class="iconimage" alt="Atrieve"
+                     tal:attributes="src string:${portal_url}/atrieve.png">
             </a>
         </li>
 	<li class="iconblock" tal:condition="icons/rvs_gmail">
@@ -160,6 +172,12 @@
             <a tal:attributes="href icons/network;" title="netWORK">
                 <img class="iconimage" alt="netWORK"
                      tal:attributes="src string:${portal_url}/netWORK.png">
+            </a>
+        </li>
+	<li class="iconblock" tal:condition="icons/outlook_exchange">
+            <a tal:attributes="href icons/outlook_exchange;" title="Outlook Exchange">
+                <img class="iconimage" alt="Outlook Exchange"
+                     tal:attributes="src string:${portal_url}/outlook-exchange.png">
             </a>
         </li>
     </ul>

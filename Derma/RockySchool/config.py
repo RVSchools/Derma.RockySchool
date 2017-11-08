@@ -13,11 +13,13 @@ class IconbarConfiguration(SimpleItem):
     facebook = FieldProperty(IIconbarConfiguration['facebook'])
     cofp = FieldProperty(IIconbarConfiguration['cofp'])
     core  = FieldProperty(IIconbarConfiguration['core'])
+    my_blueprint  = FieldProperty(IIconbarConfiguration['my_blueprint'])
     power_school = FieldProperty(IIconbarConfiguration['power_school'])
     school_cash_net = FieldProperty(IIconbarConfiguration['school_cash_net'])
     koha = FieldProperty(IIconbarConfiguration['koha'])
     rvs_resource_collection = FieldProperty(IIconbarConfiguration['rvs_resource_collection'])
     papercut = FieldProperty(IIconbarConfiguration['papercut'])
+    atrieve = FieldProperty(IIconbarConfiguration['atrieve'])
     rvs_gmail = FieldProperty(IIconbarConfiguration['rvs_gmail'])
     google = FieldProperty(IIconbarConfiguration['google'])
     moodle = FieldProperty(IIconbarConfiguration['moodle'])
@@ -35,6 +37,7 @@ class IconbarConfiguration(SimpleItem):
     tech_support = FieldProperty(IIconbarConfiguration['tech_support'])
     donations = FieldProperty(IIconbarConfiguration['donations'])
     network = FieldProperty(IIconbarConfiguration['network'])
+    outlook_exchange = FieldProperty(IIconbarConfiguration['outlook_exchange'])
 
 def form_adapter(context):
     return getUtility(IIconbarConfiguration, name='iconbar_config', context=context)
