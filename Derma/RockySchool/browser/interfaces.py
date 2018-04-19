@@ -104,7 +104,7 @@ class IIconbarConfiguration(Interface):
     network = schema.TextLine(title=u"netWORK",
                               required=False,
                                           default=u"")
-    outlook_exchange = schema.TextLine(title=u"Outlook Exchange",
+    office365 = schema.TextLine(title=u"Office 365",
                               required=False,
                                           default=u"")
 
